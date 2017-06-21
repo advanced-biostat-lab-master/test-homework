@@ -1,0 +1,44 @@
+---
+title: "Homework 0"
+author: "Your Name here"
+date: "5/31/2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Question 1
+
+Below we will read in the Boston housing project data. The distribution of the
+data is located [here](http://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.names).
+To make sure that the code below works, click:
+
+Session -> Set Working Directory -> To Source File Location
+
+```{r read_data}
+housing <- read.table("housing_data.txt")
+colnames(housing) <-
+    c("crim",
+      "zn",
+      "indus",
+      "chas",
+      "nox",
+      "rm",
+      "age",
+      "dis",
+      "rad",
+      "tax",
+      "ptratio",
+      "b",
+      "lstat",
+      "medv")
+```
+
+Make a plot of `crime` versus `medv` in the space provided below. Commit your
+changes and push the updated .Rmd document, along with the resulting PDF file.
+
+```{r test_plot}
+### plot goes here
+```
